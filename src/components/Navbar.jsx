@@ -9,7 +9,7 @@ function Navbar() {
     setMenuToggleBtn(!menuToggleBtn);
   };
   return (
-    <header className="w-full py-5 max-h-80">
+    <header className="sticky top-0 w-full py-5 border-b max-h-80 backdrop-blur-lg border-neutral-700/80">
       <nav className="container relative flex items-center justify-between w-full h-full px-8 mx-auto lg:px-3">
         <div className="flex items-center justify-center w-10 lg:w-14">
           <a className="flex items-center justify-center w-full gap-2" href="#">
