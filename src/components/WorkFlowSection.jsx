@@ -7,11 +7,11 @@ function WorkFlowSection() {
   return (
     <section className="mt-20" id="workflow">
       <div className="flex flex-col items-center justify-center text-center">
-        <h1 className="w-full m-4 my-2 text-3xl lg:text-5xl">
+        <h1 className="w-full m-4 my-6 text-3xl lg:text-5xl">
           Accelerate your{" "}
           <span className="text-orange-600">coding workflow</span>
         </h1>
-        <div className="flex flex-col justify-center gap-5 lg:flex-row">
+        <div className="flex flex-col items-center justify-center gap-5 lg:flex-row">
           <div className="w-full lg:w-1/3">
             <img className="object-cover w-full" src={code} />
           </div>

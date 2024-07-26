@@ -40,9 +40,9 @@ function Navbar() {
           </button>
         </div>
         {menuToggleBtn && (
-          <div className="fixed top-0 right-0 z-20 flex flex-col items-center justify-around min-h-screen w-80 bg-slate-500">
+          <div className="fixed top-0 right-0 z-20 flex flex-col items-center justify-between min-h-screen w-80 bg-slate-500">
             <div className="lg:hidden">
-              <ul className="flex flex-col gap-5">
+              <ul className="flex flex-col gap-5 mt-24">
                 {navItems.map((item, index) => (
                   <li key={index}>
                     <a href={item.href}>{item.label}</a>
@@ -50,7 +50,7 @@ function Navbar() {
                 ))}
               </ul>
             </div>
-            <div className="flex gap-4 lg:hidden">
+            <div className="flex gap-4 mb-10 lg:hidden">
               <a
                 className="px-4 py-2 text-sm border rounded-lg border-slate-400"
                 href="#"
