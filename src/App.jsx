@@ -1,21 +1,23 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Favorites from "./components/Favorites";
-import Details from "./components/Details";
-
+import HeroSection from "./components/HeroSection";
+import FeaturesSection from "./components/FeaturesSection";
+import WorkFLowSection from "./components/WorkFlowSection";
+import PricingSection from "./components/PricingSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/recipe-item/:id" element={<Details />} />
-        </Routes>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <main className="px-6 pt-20 mx-auto">
+        <HeroSection />
+        <FeaturesSection />
+        <WorkFLowSection />
+        <PricingSection />
+        <TestimonialsSection />
+      </main>
+      <Footer />
+    </>
   );
 }
 
